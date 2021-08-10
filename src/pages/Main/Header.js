@@ -4,11 +4,9 @@ import { toggleMobileNavVisibility } from '../../store/reducers/Layout';
  
 import { Navbar,Nav ,NavDropdown } from 'react-bootstrap';
 import { logoutUser, } from '../../store/actions/authActions';
- import setting from '../../assets/images/header/gear.svg'
- import notification from '../../assets/images/header/notification.svg'
- import name from '../../assets/images/header/name.svg'
- import { Link, withRouter } from 'react-router-dom';
-
+import search from '../../assets/images/Users/search.svg'
+import bell from '../../assets/images/Users/bell.svg'
+import user2 from '../../assets/images/Users/user2.svg'
 
 class Header extends Component {
   constructor(props) {
@@ -37,41 +35,39 @@ class Header extends Component {
   render() {
     const { toggleMobileNavVisibility, logoutUser } = this.props
     return (
-      <Navbar  class="navbar"   fluid={true} collapseOnSelect>
-      
- 
+      <div className="header-section mt-3">
+        <div className="container p-0">
+          <div className="row ">
+            <div className="col-md-1">
+              <div className="list"></div>
+            </div>
+            <div className="col-md-11">
+              <div className="header" >
 
-          <button type="button" className="navbar-toggle navtogge" data-toggle="collapse" onClick={toggleMobileNavVisibility}>
-            <span className="sr-only">Toggle navigation</span>
-            <span className="icon-bar"></span>
-            <span className="icon-bar"></span>
-            <span className="icon-bar"></span>
-          </button>
-  
-        
-     
+               <div className="row">
+                 <div className="col-md-4"><p className="poppins_medium dashboard">Dashboard </p>
+                 <p className="vl"> </p></div>
+                 <div className="col-md-4">
+                   <input className="input-sec" type="search" placeholder="Enter Your Text"></input>
+                 </div>
+                 <div className="col-md-4">
+                 <div className="icons">
+               <img   src={search}/>&nbsp;&nbsp;&nbsp;
+               <img  src={bell}/>&nbsp;&nbsp;&nbsp;
+                  <img  src={user2}/>
+                  </div>
+                 </div>
+               </div>
 
-        <Nav className="nav-right">
-            
-     
-              {/* <button class="nav-item"  onClick={logoutUser}>Log out</button> */}
-              {/* <Link to="/setting">
-
-              <img className="header-img" src={setting}></img>
-              </Link>
-               */}
-              <Link to="/notification">
-
-              <img className="header-img" src={notification}></img>
-              </Link>
-              <Link to="/profile">
-
-              <img className="header-img" src={name}></img>
-              </Link>
-
-         
-          </Nav>
-      </Navbar>
+                
+                
+                
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     )
   }
 }

@@ -15,6 +15,9 @@ import SideBar from '../../components/SideBar';
  */
 
 import Dashboard from '../Dashboard/Dashboard'
+import Menu from '../Dashboard/Menu'
+import Student from '../Student/Student'
+
 
 
 
@@ -52,7 +55,8 @@ const Main = ({
           <Header />
         
           <PrivateRoute   exact path="/" component={Dashboard} /> 
-
+          <PrivateRoute   exact path="/menu" component={Menu} /> 
+          <PrivateRoute   exact path="/student" component={Student} /> 
 
         
           

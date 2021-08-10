@@ -64,10 +64,10 @@ class Nav extends Component {
          <li className="heading">
           <span className="poppins_semibold" >E-Book Store</span>
          </li>
-         <li className={location.pathname === '/categories' ? 'active' : null}>
-          <Link to="/categories" >
-            <i ><img src={location.pathname === '/categories' ? ManageBookActive : ManageBook}></img> </i>
-             <p className="poppins_regular">Categories</p>
+         <li className={location.pathname === '/student' ? 'active' : null}>
+          <Link to="/student" >
+            <i ><img src={location.pathname === '/student' ? ManageBookActive : ManageBook}></img> </i>
+             <p className="poppins_regular">Students</p>
            </Link>
          </li>
          <li className={location.pathname === '/managebook' ? 'active' : null}>
