@@ -20,6 +20,7 @@ import Student from '../Student/Student'
 import Categorization from '../Categorization/Categorization'
 import Questions from '../Questions/Question'
 
+import AddQuestions from '../Questions/AddQuestion'
 
 
 
@@ -61,6 +62,7 @@ const Main = ({
           <PrivateRoute   exact path="/student" component={Student} /> 
           <PrivateRoute   exact path="/categorization" component={Categorization} /> 
           <PrivateRoute   exact path="/questions" component={Questions} /> 
+          <PrivateRoute   exact path="/addquestion" component={AddQuestions} /> 
 
         
           

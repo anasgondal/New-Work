@@ -8,6 +8,7 @@ import checkbox from '../../assets/images/Users/checkbox.png'
 // import more from '../../assets/images/Users/more.png'
 
 
+import { Link, withRouter } from 'react-router-dom';
 
 
 
@@ -277,7 +278,10 @@ class Questions extends Component {
               <button className="poppins_bold pre-btn">→</button>
           </div>
           <div className="col-md-4  ">
+          <Link to="/addquestion" >
+
           <button className="add-bttn">+</button>
+          </Link>
           </div>
           </div>  
 
