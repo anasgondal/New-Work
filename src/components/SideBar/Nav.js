@@ -70,16 +70,16 @@ class Nav extends Component {
              <p className="poppins_regular">Students</p>
            </Link>
          </li>
-         <li className={location.pathname === '/managebook' ? 'active' : null}>
-          <Link to="/managebook" >
-            <i ><img src={location.pathname === '/managebook' ? ManageBookActive : ManageBook}></img> </i>
-             <p className="poppins_regular">Books</p>
+         <li className={location.pathname === '/categorization' ? 'active' : null}>
+          <Link to="/categorization" >
+            <i ><img src={location.pathname === '/categorization' ? ManageBookActive : ManageBook}></img> </i>
+             <p className="poppins_regular">Categorization</p>
            </Link>
          </li>
-         <li className={location.pathname === '/addnewbook' ? 'active' : null}>
-          <Link to="/addnewbook" >
-            <i ><img src={location.pathname === '/addnewbook' ? AddNewBookActive : AddNewBook}></img> </i>
-             <p className="poppins_regular">Add New Book</p>
+         <li className={location.pathname === '/questions' ? 'active' : null}>
+          <Link to="/questions" >
+            <i ><img src={location.pathname === '/questions' ? AddNewBookActive : AddNewBook}></img> </i>
+             <p className="poppins_regular">Questions</p>
            </Link>
          </li>
 

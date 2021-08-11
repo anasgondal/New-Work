@@ -6,7 +6,8 @@ $pe-7s-font-path: "~pe7-icon/dist/fonts" !default;
 @import 'base/header';
 @import 'base/dashboard';
 @import 'base/student';
-
+@import 'base/Categorization';
+@import 'base/questions';
 
 
 
@@ -226,4 +227,8 @@ a {
   color: inherit !important;
   text-decoration: none;
 background-color: transparent !important;
+}
+.table td, .table th {
+ 
+   border-top: none !important;
 }
