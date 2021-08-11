@@ -1,0 +1,152 @@
+.addquestion-section{
+width: 99%;
+height: 2500px;
+background-color: white;
+border-radius: 10px;
+}
+.heading-sec{
+    width: 100%;
+    height: 45px;
+    // background-color: black;
+}
+.head-txt{
+    font-size: 20px;
+    color:#333333;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+.horizontal-line{
+    width: 94%;
+    height: 3px;
+}
+.test-type{
+    font-size: 16px;
+    padding-left: 50px;
+   
+}
+.staric{
+    color:red;
+}
+.input-box1{
+    width:360px;
+    height: 45px;
+    border-radius: 6px;
+    padding-left: 40px;
+    margin-left: 50px;
+    border: 1px solid #afaaaa;
+}
+.input-box2{
+    width:360px;
+    height: 45px;
+    border-radius: 6px;
+    padding-left: 30px;
+    margin-left: 50px;
+    border: 1px solid #afaaaa;
+}
+.question-box{
+    width:360px;
+    height: 164px;
+    border-radius: 6px;
+    padding-left: 30px;
+    margin-left: 50px;
+    border: 1px solid #afaaaa;
+}
+.vital-sign{
+    width: 100%;
+    height: 400px;
+    background-color: lightblue;
+    margin-left: 40px;
+    padding-left: 40px;
+    padding-top: 20px;
+    
+}
+.vital-sign .poppins_light{
+    font-size: 15px;
+}    
+.laboratory-section{
+    width: 96%;
+    height: 400px;
+    background-color: lightblue;
+    margin-left: 40px;
+    padding-left: 40px;
+    padding-top: 20px;
+}
+.lab-txt{
+    font-size: 15px;
+    color: #38A3A5;
+    padding-left: 130px;
+}
+.lab-text{
+    font-size: 15px;
+    color: #38A3A5;
+    padding-top:30px;
+}
+.laab-txt{
+    padding-left: 210px;
+    color: #38A3A5;
+}
+.text-area1{
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    border-radius: 7px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.text-area2{
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    border-radius: 7px;
+    margin-top: 20px;
+
+}
+.arrow{
+   
+    
+    border-radius: 7px;
+    margin-top: 28px;
+    margin-left: 20px;
+}
+.uparrow-btn{
+    width: 88%;
+    height: 50px;
+    background-color: #38A3A5;
+    margin-left: 50px;
+    border-radius: 6px;
+    padding-top: 9px;
+    text-align: center;
+    border: none;
+}
+.upload{
+    font-size: 14px;
+    color: white;
+}
+.demo{
+    font-size: 14px;
+}
+.demo-image{
+    margin-top: 16px;
+    margin-left: 20px;
+}
+.save-add{
+    text-align: center;
+}
+.save{
+    width: 25%;
+    height: 50px;
+    background-color: #22577A;
+    color: white;
+    border-radius: 6px;
+    margin-top: 80px;
+    border: none;
+}
+.reset-field{
+    text-align: center;
+    font-size: 15px;
+}
+.delete-question{
+    text-align: center;
+    font-size: 15px;
+    color: #FF4A4A;
+}
