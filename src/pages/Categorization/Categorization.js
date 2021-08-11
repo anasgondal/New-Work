@@ -5,8 +5,9 @@ import { connect } from 'react-redux';
 import pdf from '../../assets/images/Users/pdf.png'
 import xls from '../../assets/images/Users/xls.png'
 import checkbox from '../../assets/images/Users/checkbox.png'
-// import more from '../../assets/images/Users/more.png'
+import eye from '../../assets/images/Users/eye.png'
 
+import { Link, withRouter } from 'react-router-dom';
 
 var cx = require('classnames');
 
@@ -85,43 +86,47 @@ class Categorization extends Component {
 
                     {this.state.activeTab === 1 ? (
 
-<div>
-                    <div className="table-roww">
-                        <div className="row mt-5 main-row  ">
-                            <div className="col-md-2 ">
-                                <p className="poppins_regular ID">ID</p>
-                            </div>
-                            <div className="col-md-3 ">
-                                <p className="poppins_regular typ-name">Test Type Name</p>
-                            </div>
-                            <div className="col-md-4 ">
-                                <p className="poppins_regular description">Description</p>
-                            </div>
-                            <div className="col-md-3 ">
-                                <p className="poppins_regular action">Actions</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="row mt-5 main-row  ">
+<div className="test-type-container">
+             
+<div className="test-type">
+    
+<table className="table table-hover thead-primary mt-5 ">
+<thead className="table-head">
+<tr>                                             
+<th scope="col table_header poppins_medium"></th>
+<th scope="col table_header poppins_medium"> ID</th>
+<th scope="col table_header poppins_medium"></th>
+<th scope="col table_header poppins_medium">Test Type Name</th>
+<th scope="col table_header poppins_medium"></th>
+<th scope="col table_header poppins_medium">Description</th>
+<th scope="col table_header poppins_medium"></th>
+<th scope="col table_header poppins_medium">Actions </th>
+</tr>
+</thead>
+<tbody>
+<tr className="table-row">
+<td className="poppins_regular text-right"><img src={checkbox}/></td>
+<td className="poppins_regular table-text">Test-00000001</td>
+<td className="poppins_regular table-text"></td>
+<td className="poppins_regular table-text">FRCS-1</td>
+<td className="poppins_regular table-text"></td>
+<td className="poppins_regular table-text">FRCS one program design to test stu...</td>
+<td className="poppins_regular table-text"></td>
+<td ><select className="poppins_regular select-option">
+<option className="poppins_regular select-option">Download</option>
+<option className="poppins_regular select-option">Edit / View</option>
+<option className="poppins_regular select-option">Print</option>
+<option className="poppins_regular select-option">Delete</option></select></td>
+</tr>                                              
+                                            
 
-                        <div className="col-md-3  ">
-                            <img className=" row-txt1" src={checkbox} /><label className="poppins_regular row-txt1">Test-00000001</label>
-                        </div>
-                        <div className="col-md-3 ">
-                            <p className="poppins_regular row-txt2">FRCS-1</p>
-                        </div>
-                        <div className="col-md-3 ">
-                            <p className="poppins_regular row-txt3">FRCS one program design to test stu...</p>
-                        </div>
-                        <div className="col-md-3 ">
-                            <select className="poppins_regular row-txt4">
-                                <option>Download</option>
-                                <option>Edit /View</option>
-                                <option> Print</option>
-                                <option>Delete</option>
-                            </select>
-                        </div>
-                    </div>
+      
+
+</tbody>
+
+</table>
+
+     </div>
 
 
                     <div className="row  first-btn-sec">
@@ -138,22 +143,435 @@ class Categorization extends Component {
                             <button className="poppins_bold first-btn">→</button>
                         </div>
                         <div className="col-md-4  ">
+                            <Link to="/module/page">
                             <button className="add-btn">+</button>
+                            </Link>
                         </div>
                     </div>
                
                </div>
                           ) : this.state.activeTab === 2 ? (
-                              <div>
-                                  2
+                              <div className="basic-science-section">
+                                  <div className="basic-science">
+    
+    <table className="table table-hover thead-primary mt-5 ">
+    <thead className="table-head">
+    <tr>                                             
+    <th scope="col table_header poppins_medium"></th>
+    <th scope="col table_header poppins_medium"> ID</th>
+    <th scope="col table_header poppins_medium"></th>
+    <th scope="col table_header poppins_medium">Basic Sciences Name</th>
+    <th scope="col table_header poppins_medium"></th>
+    <th scope="col table_header poppins_medium">Description</th>
+    <th scope="col table_header poppins_medium"></th>
+    <th scope="col table_header poppins_medium">Actions </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr className="table-row">
+    <td className="poppins_regular text-right"><img src={checkbox}/></td>
+    <td className="poppins_regular table-text">BSD-1</td>
+    <td className="poppins_regular table-text"></td>
+    <td className="poppins_regular table-text">Anatomy </td>
+    <td className="poppins_regular table-text"></td>
+    <td className="poppins_regular table-text">FRCS one program design to test stu…</td>
+    <td className="poppins_regular table-text"></td>
+    <td ><select className="poppins_regular select-option">
+    <option className="poppins_regular select-option">Download</option>
+    <option className="poppins_regular select-option">Edit / View</option>
+    <option className="poppins_regular select-option">Print</option>
+    <option className="poppins_regular select-option">Delete</option></select></td>
+    </tr>                                              
+
+     <tr className="table-row">
+    <td className="poppins_regular text-right"><img src={checkbox}/></td>
+    <td className="poppins_regular table-text">BSD-2</td>
+    <td className="poppins_regular table-text"></td>
+    <td className="poppins_regular table-text">Data Interpretation & Statistics </td>
+    <td className="poppins_regular table-text"></td>
+    <td className="poppins_regular table-text">FRCS one program design to test stu…</td>
+    <td className="poppins_regular table-text"></td>
+    <td ><select className="poppins_regular select-option">
+    <option className="poppins_regular select-option">Download</option>
+    <option className="poppins_regular select-option">Edit / View</option>
+    <option className="poppins_regular select-option">Print</option>
+    <option className="poppins_regular select-option">Delete</option></select></td>
+    </tr>                                                     
+    
+    <tr className="table-row">
+    <td className="poppins_regular text-right"><img src={checkbox}/></td>
+    <td className="poppins_regular table-text">BSD-3</td>
+    <td className="poppins_regular table-text"></td>
+    <td className="poppins_regular table-text">Embryology</td>
+    <td className="poppins_regular table-text"></td>
+    <td className="poppins_regular table-text">FRCS one program design to test stu…</td>
+    <td className="poppins_regular table-text"></td>
+    <td ><select className="poppins_regular select-option">
+    <option className="poppins_regular select-option">Download</option>
+    <option className="poppins_regular select-option">Edit / View</option>
+    <option className="poppins_regular select-option">Print</option>
+    <option className="poppins_regular select-option">Delete</option></select></td>
+    </tr>          
+
+    <tr className="table-row">
+    <td className="poppins_regular text-right"><img src={checkbox}/></td>
+    <td className="poppins_regular table-text">BSD-4</td>
+    <td className="poppins_regular table-text"></td>
+    <td className="poppins_regular table-text">Endocrine & Metabolic Disorders </td>
+    <td className="poppins_regular table-text"></td>
+    <td className="poppins_regular table-text">FRCS one program design to test stu…</td>
+    <td className="poppins_regular table-text"></td>
+    <td ><select className="poppins_regular select-option">
+    <option className="poppins_regular select-option">Download</option>
+    <option className="poppins_regular select-option">Edit / View</option>
+    <option className="poppins_regular select-option">Print</option>
+    <option className="poppins_regular select-option">Delete</option></select></td>
+    </tr>          
+
+    <tr className="table-row">
+    <td className="poppins_regular text-right"><img src={checkbox}/></td>
+    <td className="poppins_regular table-text">BSD-5</td>
+    <td className="poppins_regular table-text"></td>
+    <td className="poppins_regular table-text">Guidelines </td>
+    <td className="poppins_regular table-text"></td>
+    <td className="poppins_regular table-text">FRCS one program design to test stu…</td>
+    <td className="poppins_regular table-text"></td>
+    <td ><select className="poppins_regular select-option">
+    <option className="poppins_regular select-option">Download</option>
+    <option className="poppins_regular select-option">Edit / View</option>
+    <option className="poppins_regular select-option">Print</option>
+    <option className="poppins_regular select-option">Delete</option></select></td>
+    </tr>          
+
+    <tr className="table-row">
+    <td className="poppins_regular text-right"><img src={checkbox}/></td>
+    <td className="poppins_regular table-text">BSD-6Imaging </td>
+    <td className="poppins_regular table-text"></td>
+    <td className="poppins_regular table-text">Anatomy </td>
+    <td className="poppins_regular table-text"></td>
+    <td className="poppins_regular table-text">FRCS one program design to test stu…</td>
+    <td className="poppins_regular table-text"></td>
+    <td ><select className="poppins_regular select-option">
+    <option className="poppins_regular select-option">Download</option>
+    <option className="poppins_regular select-option">Edit / View</option>
+    <option className="poppins_regular select-option">Print</option>
+    <option className="poppins_regular select-option">Delete</option></select></td>
+    </tr>          
+
+    <tr className="table-row">
+    <td className="poppins_regular text-right"><img src={checkbox}/></td>
+    <td className="poppins_regular table-text">BSD-7</td>
+    <td className="poppins_regular table-text"></td>
+    <td className="poppins_regular table-text">Immunology </td>
+    <td className="poppins_regular table-text"></td>
+    <td className="poppins_regular table-text">FRCS one program design to test stu…</td>
+    <td className="poppins_regular table-text"></td>
+    <td ><select className="poppins_regular select-option">
+    <option className="poppins_regular select-option">Download</option>
+    <option className="poppins_regular select-option">Edit / View</option>
+    <option className="poppins_regular select-option">Print</option>
+    <option className="poppins_regular select-option">Delete</option></select></td>
+    </tr>          
+
+    <tr className="table-row">
+    <td className="poppins_regular text-right"><img src={checkbox}/></td>
+    <td className="poppins_regular table-text">BSD-8</td>
+    <td className="poppins_regular table-text"></td>
+    <td className="poppins_regular table-text">Biology</td>
+    <td className="poppins_regular table-text"></td>
+    <td className="poppins_regular table-text">FRCS one program design to test stu…</td>
+    <td className="poppins_regular table-text"></td>
+    <td ><select className="poppins_regular select-option">
+    <option className="poppins_regular select-option">Download</option>
+    <option className="poppins_regular select-option">Edit / View</option>
+    <option className="poppins_regular select-option">Print</option>
+    <option className="poppins_regular select-option">Delete</option></select></td>
+    </tr>          
+          
+    
+    </tbody>
+    
+    </table>
+    
+         </div>
+    
+    
+                        <div className="row  first-btn-sec">
+                            <div className="col-md-3 text-right rights ">
+    
+                            </div>
+                            <div className="col-md-5 number ">
+                                <button className="poppins_bold first-btn">←</button>
+                                <button className="poppins_bold numb-btn">1</button>
+                                <button className="poppins_bold numb-btn">2</button>
+                                <button className="poppins_bold numb-btn">3</button>
+                                <button className="poppins_bold numb-btn">4</button>
+                                <button className="poppins_bold numb-btn">5</button>
+                                <button className="poppins_bold first-btn">→</button>
+                            </div>
+                            <div className="col-md-4  ">
+                            <Link to="/module/page">
+                            <button className="add-btn">+</button>
+                            </Link>
+                            </div>
+                        </div>
                                   </div>
                           ) : this.state.activeTab === 3 ? (
-                            <div>
-                                3
+                            <div className="blooms-domain-section">
+                                    <div className="blooms-domain">
+    
+    <table className="table table-hover thead-primary mt-5 ">
+    <thead className="table-head">
+    <tr>                                             
+    <th scope="col table_header poppins_medium"></th>
+    <th scope="col table_header poppins_medium"> ID</th>
+    <th scope="col table_header poppins_medium"></th>
+    <th scope="col table_header poppins_medium">Basic Sciences Name</th>
+    <th scope="col table_header poppins_medium"></th>
+    <th scope="col table_header poppins_medium">Description</th>
+    <th scope="col table_header poppins_medium"></th>
+    <th scope="col table_header poppins_medium">Actions </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr className="table-row">
+    <td className="poppins_regular text-right"><img src={checkbox}/></td>
+    <td className="poppins_regular table-text">BTD-1</td>
+    <td className="poppins_regular table-text"></td>
+    <td className="poppins_regular table-text">Knowledge & Comprehension</td>
+    <td className="poppins_regular table-text"></td>
+    <td className="poppins_regular table-text">FRCS one program design to test stu…</td>
+    <td className="poppins_regular table-text"></td>
+    <td ><select className="poppins_regular select-option">
+    <option className="poppins_regular select-option">Download</option>
+    <option className="poppins_regular select-option">Edit / View</option>
+    <option className="poppins_regular select-option">Print</option>
+    <option className="poppins_regular select-option">Delete</option></select></td>
+    </tr>                                              
+
+     <tr className="table-row">
+    <td className="poppins_regular text-right"><img src={checkbox}/></td>
+    <td className="poppins_regular table-text">BTD-2</td>
+    <td className="poppins_regular table-text"></td>
+    <td className="poppins_regular table-text">Application & Analysis </td>
+    <td className="poppins_regular table-text"></td>
+    <td className="poppins_regular table-text">FRCS one program design to test stu…</td>
+    <td className="poppins_regular table-text"></td>
+    <td ><select className="poppins_regular select-option">
+    <option className="poppins_regular select-option">Download</option>
+    <option className="poppins_regular select-option">Edit / View</option>
+    <option className="poppins_regular select-option">Print</option>
+    <option className="poppins_regular select-option">Delete</option></select></td>
+    </tr>                                                     
+    
+    <tr className="table-row">
+    <td className="poppins_regular text-right"><img src={checkbox}/></td>
+    <td className="poppins_regular table-text">BTD-3</td>
+    <td className="poppins_regular table-text"></td>
+    <td className="poppins_regular table-text">Synthesis & Evaluation</td>
+    <td className="poppins_regular table-text"></td>
+    <td className="poppins_regular table-text">FRCS one program design to test stu…</td>
+    <td className="poppins_regular table-text"></td>
+    <td ><select className="poppins_regular select-option">
+    <option className="poppins_regular select-option">Download</option>
+    <option className="poppins_regular select-option">Edit / View</option>
+    <option className="poppins_regular select-option">Print</option>
+    <option className="poppins_regular select-option">Delete</option></select></td>
+    </tr>          
+
+    
+       
+          
+    
+    </tbody>
+    
+    </table>
+    
+         </div>
+    
+    
+                        <div className="row  first-btn-sec">
+                            <div className="col-md-3 text-right rights ">
+    
+                            </div>
+                            <div className="col-md-5 number ">
+                                <button className="poppins_bold first-btn">←</button>
+                                <button className="poppins_bold numb-btn">1</button>
+                                <button className="poppins_bold numb-btn">2</button>
+                                <button className="poppins_bold numb-btn">3</button>
+                                <button className="poppins_bold numb-btn">4</button>
+                                <button className="poppins_bold numb-btn">5</button>
+                                <button className="poppins_bold first-btn">→</button>
+                            </div>
+                            <div className="col-md-4  ">
+                            <Link to="/module/page">
+                            <button className="add-btn">+</button>
+                            </Link>
+                            </div>
+                        </div>
                             </div>
                 ) : this.state.activeTab === 4 && (
-                    <div>
-                        4
+                    <div className="specialty-domain-section">
+                                      <div className="specialty-domain">
+    
+    <table className="table table-hover thead-primary mt-5 ">
+    <thead className="table-head">
+    <tr>                                             
+    <th scope="col table_header poppins_medium"></th>
+    <th scope="col table_header poppins_medium"> ID</th>
+    <th scope="col table_header poppins_medium">Test Type</th>
+    <th scope="col table_header poppins_medium">Basic Sciences Name</th>
+    <th scope="col table_header poppins_medium"> Description</th>
+    <th scope="col table_header poppins_medium"></th>
+    <th scope="col table_header poppins_medium"></th>
+    <th scope="col table_header poppins_medium">Actions </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr className="table-row">
+    <td className="poppins_regular text-right"><img src={checkbox}/></td>
+    <td className="poppins_regular table-text">SD-1</td>
+    <td className="poppins_regular table-text">FRCS-1</td>
+    <td className="poppins_regular table-text">Professional Behavior & Leadership</td>
+    <td className="poppins_regular table-text">FRCS one program design…</td>
+    <td className="poppins_regular table-text"><img src={eye}/></td>
+    <td className="poppins_regular table-text"></td>
+    <td ><select className="poppins_regular select-option">
+    <option className="poppins_regular select-option">Download</option>
+    <option className="poppins_regular select-option">Edit / View</option>
+    <option className="poppins_regular select-option">Print</option>
+    <option className="poppins_regular select-option">Delete</option></select></td>
+    </tr>                                              
+          
+    <tr className="table-row">
+    <td className="poppins_regular text-right"><img src={checkbox}/></td>
+    <td className="poppins_regular table-text">SD-2</td>
+    <td className="poppins_regular table-text">FRCS-2</td>
+    <td className="poppins_regular table-text">General Surgery (Elective and Emergency)</td>
+    <td className="poppins_regular table-text">FRCS one program design…</td>
+    <td className="poppins_regular table-text"><img src={eye}/></td>
+    <td className="poppins_regular table-text"></td>
+    <td ><select className="poppins_regular select-option">
+    <option className="poppins_regular select-option">Download</option>
+    <option className="poppins_regular select-option">Edit / View</option>
+    <option className="poppins_regular select-option">Print</option>
+    <option className="poppins_regular select-option">Delete</option></select></td>
+    </tr>                  
+       
+    <tr className="table-row">
+    <td className="poppins_regular text-right"><img src={checkbox}/></td>
+    <td className="poppins_regular table-text">SD-3</td>
+    <td className="poppins_regular table-text">FRCS-3</td>
+    <td className="poppins_regular table-text">General Surgery (Breast)</td>
+    <td className="poppins_regular table-text">FRCS one program design…</td>
+    <td className="poppins_regular table-text"><img src={eye}/></td>
+    <td className="poppins_regular table-text"></td>
+    <td ><select className="poppins_regular select-option">
+    <option className="poppins_regular select-option">Download</option>
+    <option className="poppins_regular select-option">Edit / View</option>
+    <option className="poppins_regular select-option">Print</option>
+    <option className="poppins_regular select-option">Delete</option></select></td>
+    </tr>          
+          
+    <tr className="table-row">
+    <td className="poppins_regular text-right"><img src={checkbox}/></td>
+    <td className="poppins_regular table-text">SD-4</td>
+    <td className="poppins_regular table-text">FRCS-4</td>
+    <td className="poppins_regular table-text">General Surgery (Endocrine)</td>
+    <td className="poppins_regular table-text">FRCS one program design…</td>
+    <td className="poppins_regular table-text"><img src={eye}/></td>
+    <td className="poppins_regular table-text"></td>
+    <td ><select className="poppins_regular select-option">
+    <option className="poppins_regular select-option">Download</option>
+    <option className="poppins_regular select-option">Edit / View</option>
+    <option className="poppins_regular select-option">Print</option>
+    <option className="poppins_regular select-option">Delete</option></select></td>
+    </tr>        
+
+    <tr className="table-row">
+    <td className="poppins_regular text-right"><img src={checkbox}/></td>
+    <td className="poppins_regular table-text">SD-5</td>
+    <td className="poppins_regular table-text">FRCS-5</td>
+    <td className="poppins_regular table-text">General Surgery (Upper GI & HPB Surgery)</td>
+    <td className="poppins_regular table-text">FRCS one program design…</td>
+    <td className="poppins_regular table-text"><img src={eye}/></td>
+    <td className="poppins_regular table-text"></td>
+    <td ><select className="poppins_regular select-option">
+    <option className="poppins_regular select-option">Download</option>
+    <option className="poppins_regular select-option">Edit / View</option>
+    <option className="poppins_regular select-option">Print</option>
+    <option className="poppins_regular select-option">Delete</option></select></td>
+    </tr>        
+
+     <tr className="table-row">
+    <td className="poppins_regular text-right"><img src={checkbox}/></td>
+    <td className="poppins_regular table-text">SD-6</td>
+    <td className="poppins_regular table-text">FRCS-6</td>
+    <td className="poppins_regular table-text">General Surgery (Transplant)</td>
+    <td className="poppins_regular table-text">FRCS one program design…</td>
+    <td className="poppins_regular table-text"><img src={eye}/></td>
+    <td className="poppins_regular table-text"></td>
+    <td ><select className="poppins_regular select-option">
+    <option className="poppins_regular select-option">Download</option>
+    <option className="poppins_regular select-option">Edit / View</option>
+    <option className="poppins_regular select-option">Print</option>
+    <option className="poppins_regular select-option">Delete</option></select></td>
+    </tr>         
+
+     <tr className="table-row">
+    <td className="poppins_regular text-right"><img src={checkbox}/></td>
+    <td className="poppins_regular table-text">SD-7</td>
+    <td className="poppins_regular table-text">FRCS-7</td>
+    <td className="poppins_regular table-text">General Surgery (Colorectal)</td>
+    <td className="poppins_regular table-text">FRCS one program design…</td>
+    <td className="poppins_regular table-text"><img src={eye}/></td>
+    <td className="poppins_regular table-text"></td>
+    <td ><select className="poppins_regular select-option">
+    <option className="poppins_regular select-option">Download</option>
+    <option className="poppins_regular select-option">Edit / View</option>
+    <option className="poppins_regular select-option">Print</option>
+    <option className="poppins_regular select-option">Delete</option></select></td>
+    </tr>           
+    <tr className="table-row">
+    <td className="poppins_regular text-right"><img src={checkbox}/></td>
+    <td className="poppins_regular table-text">SD-8</td>
+    <td className="poppins_regular table-text">FRCS-8</td>
+    <td className="poppins_regular table-text">General Surgery (Vascular)</td>
+    <td className="poppins_regular table-text">FRCS one program design…</td>
+    <td className="poppins_regular table-text"><img src={eye}/></td>
+    <td className="poppins_regular table-text"></td>
+    <td ><select className="poppins_regular select-option">
+    <option className="poppins_regular select-option">Download</option>
+    <option className="poppins_regular select-option">Edit / View</option>
+    <option className="poppins_regular select-option">Print</option>
+    <option className="poppins_regular select-option">Delete</option></select></td>
+    </tr>           
+    </tbody>
+    
+    </table>
+    
+         </div>
+    
+    
+                        <div className="row  first-btn-sec">
+                            <div className="col-md-3 text-right rights ">
+    
+                            </div>
+                            <div className="col-md-5 number ">
+                                <button className="poppins_bold first-btn">←</button>
+                                <button className="poppins_bold numb-btn">1</button>
+                                <button className="poppins_bold numb-btn">2</button>
+                                <button className="poppins_bold numb-btn">3</button>
+                                <button className="poppins_bold numb-btn">4</button>
+                                <button className="poppins_bold numb-btn">5</button>
+                                <button className="poppins_bold first-btn">→</button>
+                            </div>
+                            <div className="col-md-4  ">
+                            <Link to="/module/page">
+                            <button className="add-btn">+</button>
+                            </Link>
+                            </div>
+                        </div>
                     </div>
 
                     )

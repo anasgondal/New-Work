@@ -21,6 +21,7 @@ import Categorization from '../Categorization/Categorization'
 import Questions from '../Questions/Question'
 
 import AddQuestions from '../Questions/AddQuestion'
+import Module from '../Categorization/Module';
 
 
 
@@ -63,6 +64,7 @@ const Main = ({
           <PrivateRoute   exact path="/categorization" component={Categorization} /> 
           <PrivateRoute   exact path="/questions" component={Questions} /> 
           <PrivateRoute   exact path="/addquestion" component={AddQuestions} /> 
+          <PrivateRoute   exact path="/module/page" component={Module} /> 
 
         
           
