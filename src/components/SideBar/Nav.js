@@ -76,10 +76,10 @@ class Nav extends Component {
              <p className="poppins_regular">Categorization</p>
            </Link>
          </li>
-         <li className={location.pathname === '/questions' ? 'active' : null}>
-          <Link to="/questions" >
-            <i ><img src={location.pathname === '/questions' ? AddNewBookActive : AddNewBook}></img> </i>
-             <p className="poppins_regular">Questions</p>
+         <li className={location.pathname === '/questionmain' ? 'active' : null}>
+          <Link to="/questionmain" >
+            <i ><img src={location.pathname === '/questionmain' ? AddNewBookActive : AddNewBook}></img> </i>
+             <p className="poppins_regular">Question</p>
            </Link>
          </li>
 

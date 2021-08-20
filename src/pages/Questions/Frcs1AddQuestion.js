@@ -19,7 +19,7 @@ import tick from '../../assets/images/Users/tick.png'
 
 
 
-class AddQuestion extends Component {
+class Frcs1AddQuestion extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -180,7 +180,14 @@ class AddQuestion extends Component {
          </div>
              </div>
 
+<div className="row mt-5">
+    <div className="col-md-12">
+    <p className="poppins_regular test-type">Lead In <label className="staric">*</label></p>
+         <input type="text" className="lead-box" placeholder="Please Input lead"></input>
 
+
+    </div>
+</div>
 
 
              <div  className="row mt-4">
@@ -315,20 +322,26 @@ class AddQuestion extends Component {
 
                  <div className="row mt-3 p-0">
 <div className="col-md-6 anas ">
-        <p className="poppins_regular test-type">Lead In <label className="staric">*</label></p>
-         <input type="text" className="input-box1" placeholder="Please Input lead"></input>
+<p className="poppins_regular test-type">Reference Link <label className="staric">*</label></p>
+        <input type="text" className="input-box1" placeholder="Please Input lead"></input>
          </div>
     <div className="col-md-6 anas">
-        <p className="poppins_regular test-type">Reference Link <label className="staric">*</label></p>
-        <input type="text" className="input-box1" placeholder="Please Input lead"></input>
+    <p className="poppins_regular test-type">Add Image Resource<label className="staric">*</label></p>
+         <input type="text" className="input-box1" placeholder="Paste URL"></input>
          </div>
              </div>
 
 
              <div className="row mt-4 p-0">
 <div className="col-md-6 anas ">
-        <p className="poppins_regular test-type">Add Image Resource<label className="staric">*</label></p>
-         <input type="text" className="input-box1" placeholder="Paste URL"></input>
+        <div className="row gapping">
+            <div className="col-md-6"><button className="uparrow-btn">
+            <img src={uparrow}/> &nbsp;&nbsp;&nbsp;
+            <label className="poppins_extralight upload">Upload Image</label>
+        </button></div>
+            <div className="col-md-6 "><img src={tick}/> &nbsp;&nbsp;&nbsp;
+            <label className="poppins_extralight demo">demo_image.jpg</label> </div>
+        </div>
          </div>
     <div className="col-md-6 anas">
         <p className="poppins_regular test-type">Video Link<label className="staric">*</label></p>
@@ -340,15 +353,11 @@ class AddQuestion extends Component {
 
 <div className="row mt-5">
     <div className="col-md-3">
-        <button className="uparrow-btn">
-            <img src={uparrow}/> &nbsp;&nbsp;&nbsp;
-            <label className="poppins_extralight upload">Upload Image</label>
-        </button>
+        
     </div>
     <div className="col-md-3 ">
         <div className="demo-image">
-        <img src={tick}/> &nbsp;&nbsp;&nbsp;
-            <label className="poppins_extralight demo">demo_image.jpg</label> </div>
+        </div>
     </div>
 </div>
 
@@ -381,7 +390,7 @@ class AddQuestion extends Component {
 
 }
 
-AddQuestion.propTypes = {
+Frcs1AddQuestion.propTypes = {
 
 };
 
@@ -396,4 +405,4 @@ const mapDispatchToProps = ({
   
 
 })
-export default connect(mapStateToProps, mapDispatchToProps)(AddQuestion);
+export default connect(mapStateToProps, mapDispatchToProps)(Frcs1AddQuestion);

@@ -17,7 +17,7 @@ import { Link, withRouter } from 'react-router-dom';
 
 
 
-class Questions extends Component {
+class Frcs1Question extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -278,7 +278,7 @@ class Questions extends Component {
               <button className="poppins_bold pre-btn">→</button>
           </div>
           <div className="col-md-4  ">
-          <Link to="/addquestion" >
+          <Link to="/frcs1/addquestion" >
 
           <button className="add-bttn">+</button>
           </Link>
@@ -293,7 +293,7 @@ class Questions extends Component {
 
 }
 
-Questions.propTypes = {
+Frcs1Question.propTypes = {
 
 };
 
@@ -308,4 +308,4 @@ const mapDispatchToProps = ({
   
 
 })
-export default connect(mapStateToProps, mapDispatchToProps)(Questions);
+export default connect(mapStateToProps, mapDispatchToProps)(Frcs1Question);

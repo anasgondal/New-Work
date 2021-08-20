@@ -1,8 +1,38 @@
 .addquestion-section{
 width: 99%;
-height: 2500px;
+height: auto;
 background-color: white;
 border-radius: 10px;
+}
+.frcs2-section{
+    width: 99%;
+height: 500px;
+background-color: white;
+border-radius: 10px;
+}
+.oral-btn{
+    width: 30%;
+    color: white;
+    background-color: #22577A;
+    border-radius: 6px;
+    border: none;
+    margin-left: 80px;
+}
+.oral-btn:hover{
+    background-color: black;
+    color: white;
+}
+.clinical-btn{
+    width: 30%;
+    color: white;
+    background-color: #22577A;
+    border-radius: 6px;
+    border: none;
+    margin-left: 20px;
+}
+.clinical-btn:hover{
+    background-color: black;
+    color: white;
 }
 .heading-sec{
     width: 100%;
@@ -28,7 +58,7 @@ border-radius: 10px;
     color:red;
 }
 .input-box1{
-    width:360px;
+    width:390px;
     height: 45px;
     border-radius: 6px;
     padding-left: 40px;
@@ -36,7 +66,7 @@ border-radius: 10px;
     border: 1px solid #afaaaa;
 }
 .input-box2{
-    width:360px;
+    width:390px;
     height: 45px;
     border-radius: 6px;
     padding-left: 30px;
@@ -118,16 +148,30 @@ border-radius: 10px;
     text-align: center;
     border: none;
 }
+.lead-box{
+    width: 86%;
+    height: 45px;
+    border-radius: 6px;
+    padding-left: 40px;
+    margin-left: 50px;
+    border: 1px solid #afaaaa;
+}
 .upload{
     font-size: 14px;
     color: white;
 }
+.gapping{
+    margin-top:15px;
+}
 .demo{
     font-size: 14px;
+    padding-top: 12px;
+   
 }
 .demo-image{
     margin-top: 16px;
-    margin-left: 20px;
+    margin-left: 30px;
+    
 }
 .save-add{
     text-align: center;

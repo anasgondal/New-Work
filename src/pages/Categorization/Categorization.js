@@ -69,18 +69,24 @@ class Categorization extends Component {
                 <div className="container  p-0">
                     <div className="row btn-row ">
 
-                        <div className="col-md-3 p-0">
+                        <div className="col-md-2 p-0">
                                 <button className={cx({ "poppins_medium up-btn": true, "poppins_medium up-btn-Active": this.state.activeTab === 1 })} onClick={() => this.onClickBottomBar(1)} >Test Type</button>
                         </div>
-                        <div className="col-md-3 p-0">
+                        <div className="col-md-2 p-0">
                             
                             <button className={cx({ "poppins_medium up-btn": true, "poppins_medium up-btn-Active": this.state.activeTab === 2 })} onClick={() => this.onClickBottomBar(2)} >Basic Sciences Domain</button>
                         </div>
-                        <div className="col-md-3 p-0">
+                        <div className="col-md-2 p-0">
                             <button className={cx({ "poppins_medium up-btn": true, "poppins_medium up-btn-Active": this.state.activeTab === 3 })} onClick={() => this.onClickBottomBar(3)} >Bloom's Taxonomy Domain</button>
                         </div>
-                        <div className="col-md-3 p-0">
+                        <div className="col-md-2 p-0">
                             <button className={cx({ "poppins_medium up-btn": true, "poppins_medium up-btn-Active": this.state.activeTab === 4 })} onClick={() => this.onClickBottomBar(4)} >Specialty Domain</button>
+                        </div>
+                        <div className="col-md-2 p-0">
+                            <button className={cx({ "poppins_medium up-btn": true, "poppins_medium up-btn-Active": this.state.activeTab === 5 })} onClick={() => this.onClickBottomBar(5)} >Oral Vivas</button>
+                        </div>
+                        <div className="col-md-2 p-0">
+                            <button className={cx({ "poppins_medium up-btn": true, "poppins_medium up-btn-Active": this.state.activeTab === 6 })} onClick={() => this.onClickBottomBar(6)} >Clinical Vivas</button>
                         </div>
                     </div>
 
@@ -133,19 +139,20 @@ class Categorization extends Component {
                         <div className="col-md-3 text-right rights ">
 
                         </div>
-                        <div className="col-md-5 number ">
-                            <button className="poppins_bold first-btn">←</button>
-                            <button className="poppins_bold numb-btn">1</button>
-                            <button className="poppins_bold numb-btn">2</button>
-                            <button className="poppins_bold numb-btn">3</button>
-                            <button className="poppins_bold numb-btn">4</button>
-                            <button className="poppins_bold numb-btn">5</button>
-                            <button className="poppins_bold first-btn">→</button>
-                        </div>
+                        <div className="col-md-5 numbers ">
+          <button className="poppins_bold pre-btn">←</button>
+              <button className="poppins_bold num-btn">1</button>
+              <button className="poppins_bold num-btn">2</button>
+              <button className="poppins_bold num-btn">3</button>
+              <button className="poppins_bold num-btn">4</button>
+              <button className="poppins_bold num-btn">5</button>
+              <button className="poppins_bold pre-btn">→</button>
+          </div>
                         <div className="col-md-4  ">
-                            <Link to="/module/page">
+                        <button className="add-btn">+</button>
+                            {/* <Link to="/module/page">
                             <button className="add-btn">+</button>
-                            </Link>
+                            </Link> */}
                         </div>
                     </div>
                
@@ -300,19 +307,20 @@ class Categorization extends Component {
                             <div className="col-md-3 text-right rights ">
     
                             </div>
-                            <div className="col-md-5 number ">
-                                <button className="poppins_bold first-btn">←</button>
-                                <button className="poppins_bold numb-btn">1</button>
-                                <button className="poppins_bold numb-btn">2</button>
-                                <button className="poppins_bold numb-btn">3</button>
-                                <button className="poppins_bold numb-btn">4</button>
-                                <button className="poppins_bold numb-btn">5</button>
-                                <button className="poppins_bold first-btn">→</button>
-                            </div>
+                            <div className="col-md-5 numbers ">
+          <button className="poppins_bold pre-btn">←</button>
+              <button className="poppins_bold num-btn">1</button>
+              <button className="poppins_bold num-btn">2</button>
+              <button className="poppins_bold num-btn">3</button>
+              <button className="poppins_bold num-btn">4</button>
+              <button className="poppins_bold num-btn">5</button>
+              <button className="poppins_bold pre-btn">→</button>
+          </div>
                             <div className="col-md-4  ">
-                            <Link to="/module/page">
                             <button className="add-btn">+</button>
-                            </Link>
+                            {/* <Link to="/module/page">
+                            <button className="add-btn">+</button>
+                            </Link> */}
                             </div>
                         </div>
                                   </div>
@@ -394,23 +402,24 @@ class Categorization extends Component {
                             <div className="col-md-3 text-right rights ">
     
                             </div>
-                            <div className="col-md-5 number ">
-                                <button className="poppins_bold first-btn">←</button>
-                                <button className="poppins_bold numb-btn">1</button>
-                                <button className="poppins_bold numb-btn">2</button>
-                                <button className="poppins_bold numb-btn">3</button>
-                                <button className="poppins_bold numb-btn">4</button>
-                                <button className="poppins_bold numb-btn">5</button>
-                                <button className="poppins_bold first-btn">→</button>
-                            </div>
+                            <div className="col-md-5 numbers ">
+          <button className="poppins_bold pre-btn">←</button>
+              <button className="poppins_bold num-btn">1</button>
+              <button className="poppins_bold num-btn">2</button>
+              <button className="poppins_bold num-btn">3</button>
+              <button className="poppins_bold num-btn">4</button>
+              <button className="poppins_bold num-btn">5</button>
+              <button className="poppins_bold pre-btn">→</button>
+          </div>
                             <div className="col-md-4  ">
-                            <Link to="/module/page">
                             <button className="add-btn">+</button>
-                            </Link>
+                            {/* <Link to="/module/page">
+                            <button className="add-btn">+</button>
+                            </Link> */}
                             </div>
                         </div>
                             </div>
-                ) : this.state.activeTab === 4 && (
+                ) : this.state.activeTab === 4 ? (
                     <div className="specialty-domain-section">
                                       <div className="specialty-domain">
     
@@ -557,15 +566,15 @@ class Categorization extends Component {
                             <div className="col-md-3 text-right rights ">
     
                             </div>
-                            <div className="col-md-5 number ">
-                                <button className="poppins_bold first-btn">←</button>
-                                <button className="poppins_bold numb-btn">1</button>
-                                <button className="poppins_bold numb-btn">2</button>
-                                <button className="poppins_bold numb-btn">3</button>
-                                <button className="poppins_bold numb-btn">4</button>
-                                <button className="poppins_bold numb-btn">5</button>
-                                <button className="poppins_bold first-btn">→</button>
-                            </div>
+                            <div className="col-md-5 numbers ">
+          <button className="poppins_bold pre-btn">←</button>
+              <button className="poppins_bold num-btn">1</button>
+              <button className="poppins_bold num-btn">2</button>
+              <button className="poppins_bold num-btn">3</button>
+              <button className="poppins_bold num-btn">4</button>
+              <button className="poppins_bold num-btn">5</button>
+              <button className="poppins_bold pre-btn">→</button>
+          </div>
                             <div className="col-md-4  ">
                             <Link to="/module/page">
                             <button className="add-btn">+</button>
@@ -574,7 +583,182 @@ class Categorization extends Component {
                         </div>
                     </div>
 
-                    )
+                    ) :this.state.activeTab === 5 ? (
+
+                        <div className="test-type-container">
+                                     
+                        <div className="test-type">
+                            
+                        <table className="table table-hover thead-primary mt-5 ">
+                        <thead className="table-head">
+                        <tr>                                             
+                        <th scope="col table_header poppins_medium"></th>
+                        <th scope="col table_header poppins_medium"> ID</th>
+                        <th scope="col table_header poppins_medium"></th>
+                        <th scope="col table_header poppins_medium">Oral Viva Type</th>
+                        <th scope="col table_header poppins_medium"></th>
+                        <th scope="col table_header poppins_medium">Description</th>
+                        <th scope="col table_header poppins_medium"></th>
+                        <th scope="col table_header poppins_medium">Actions </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr className="table-row">
+                        <td className="poppins_regular text-right"><img src={checkbox}/></td>
+                        <td className="poppins_regular table-text">OV-0011312</td>
+                        <td className="poppins_regular table-text"></td>
+                        <td className="poppins_regular table-text">Emergency Surgery/Trauma/Critical Care</td>
+                        <td className="poppins_regular table-text"></td>
+                        <td className="poppins_regular table-text">FRCS one program design to test stu...</td>
+                        <td className="poppins_regular table-text"></td>
+                        <td ><select className="poppins_regular select-option">
+                        <option className="poppins_regular select-option">Download</option>
+                        <option className="poppins_regular select-option">Edit / View</option>
+                        <option className="poppins_regular select-option">Print</option>
+                        <option className="poppins_regular select-option">Delete</option></select></td>
+                        </tr>                                              
+                                                                    
+                        
+                              
+                        
+                        </tbody>
+                        
+                        </table>
+                        
+                             </div>
+                        
+                        
+                                            <div className="row  first-btn-sec">
+                                                <div className="col-md-3 text-right rights ">
+                        
+                                                </div>
+                                                <div className="col-md-5 numbers ">
+          <button className="poppins_bold pre-btn">←</button>
+              <button className="poppins_bold num-btn">1</button>
+              <button className="poppins_bold num-btn">2</button>
+              <button className="poppins_bold num-btn">3</button>
+              <button className="poppins_bold num-btn">4</button>
+              <button className="poppins_bold num-btn">5</button>
+              <button className="poppins_bold pre-btn">→</button>
+          </div>
+                                                <div className="col-md-4  ">
+                                                <button className="add-btn">+</button>
+                                                    {/* <Link to="/module/page">
+                                                    <button className="add-btn">+</button>
+                                                    </Link> */}
+                                                </div>
+                                            </div>
+                                       
+                                       </div>
+      ) :this.state.activeTab === 6 && (
+
+        <div className="test-type-container">
+                     
+        <div className="test-type">
+            
+        <table className="table table-hover thead-primary mt-5 ">
+        <thead className="table-head">
+        <tr>                                             
+        <th scope="col table_header poppins_medium"></th>
+        <th scope="col table_header poppins_medium"> ID</th>
+        <th scope="col table_header poppins_medium"></th>
+        <th scope="col table_header poppins_medium">Clinical Viva </th>
+        <th scope="col table_header poppins_medium"></th>
+        <th scope="col table_header poppins_medium">Type of Question</th>
+        <th scope="col table_header poppins_medium"></th>
+        <th scope="col table_header poppins_medium">Actions </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr className="table-row">
+        <td className="poppins_regular text-right"><img src={checkbox}/></td>
+        <td className="poppins_regular table-text">CV-0011312</td>
+        <td className="poppins_regular table-text"></td>
+        <td className="poppins_regular table-text">General Surgery Clinical</td>
+        <td className="poppins_regular table-text"></td>
+        <td className="poppins_regular table-text">Long Cases</td>
+        <td className="poppins_regular table-text"></td>
+        <td ><select className="poppins_regular select-option">
+        <option className="poppins_regular select-option">Download</option>
+        <option className="poppins_regular select-option">Edit / View</option>
+        <option className="poppins_regular select-option">Print</option>
+        <option className="poppins_regular select-option">Delete</option></select></td>
+        </tr>               
+
+         <tr className="table-row">
+        <td className="poppins_regular text-right"><img src={checkbox}/></td>
+        <td className="poppins_regular table-text">CV-0011312</td>
+        <td className="poppins_regular table-text"></td>
+        <td className="poppins_regular table-text">Special Interest Clinical </td>
+        <td className="poppins_regular table-text"></td>
+        <td className="poppins_regular table-text">Long Cases</td>
+        <td className="poppins_regular table-text"></td>
+        <td ><select className="poppins_regular select-option">
+        <option className="poppins_regular select-option">Download</option>
+        <option className="poppins_regular select-option">Edit / View</option>
+        <option className="poppins_regular select-option">Print</option>
+        <option className="poppins_regular select-option">Delete</option></select></td>
+        </tr>                  
+
+          <tr className="table-row">
+        <td className="poppins_regular text-right"><img src={checkbox}/></td>
+        <td className="poppins_regular table-text">CV-0011312</td>
+        <td className="poppins_regular table-text"></td>
+        <td className="poppins_regular table-text">General Surgery Clinical</td>
+        <td className="poppins_regular table-text"></td>
+        <td className="poppins_regular table-text">Short Cases</td>
+        <td className="poppins_regular table-text"></td>
+        <td ><select className="poppins_regular select-option">
+        <option className="poppins_regular select-option">Download</option>
+        <option className="poppins_regular select-option">Edit / View</option>
+        <option className="poppins_regular select-option">Print</option>
+        <option className="poppins_regular select-option">Delete</option></select></td>
+        </tr>         
+
+          <tr className="table-row">
+        <td className="poppins_regular text-right"><img src={checkbox}/></td>
+        <td className="poppins_regular table-text">CV-0011312</td>
+        <td className="poppins_regular table-text"></td>
+        <td className="poppins_regular table-text">Special Interest Clinical</td>
+        <td className="poppins_regular table-text"></td>
+        <td className="poppins_regular table-text">Short Cases</td>
+        <td className="poppins_regular table-text"></td>
+        <td ><select className="poppins_regular select-option">
+        <option className="poppins_regular select-option">Download</option>
+        <option className="poppins_regular select-option">Edit / View</option>
+        <option className="poppins_regular select-option">Print</option>
+        <option className="poppins_regular select-option">Delete</option></select></td>
+        </tr>                                              
+        </tbody>
+        
+        </table>
+        
+             </div>
+        
+        
+                            <div className="row  first-btn-sec">
+                                <div className="col-md-3 text-right rights ">
+        
+                                </div>
+                                <div className="col-md-5 numbers ">
+          <button className="poppins_bold pre-btn">←</button>
+              <button className="poppins_bold num-btn">1</button>
+              <button className="poppins_bold num-btn">2</button>
+              <button className="poppins_bold num-btn">3</button>
+              <button className="poppins_bold num-btn">4</button>
+              <button className="poppins_bold num-btn">5</button>
+              <button className="poppins_bold pre-btn">→</button>
+          </div>
+                                <div className="col-md-4  ">
+                                <button className="add-btn">+</button>
+                                    {/* <Link to="/module/page">
+                                    <button className="add-btn">+</button>
+                                    </Link> */}
+                                </div>
+                            </div>
+                       
+                       </div>
+                                  ) 
                 }
 
 
