@@ -91,7 +91,7 @@ a {
       margin-right: 10px;
     }
     .brand-name {
-      color: #517A95;
+      color: #38a3a5;
       letter-spacing: 0px;
       text-align: center;
       font-size: 20px;
@@ -99,16 +99,16 @@ a {
       font-weight: normal;
     }
     .brand-name-bold {
-      color: #517A95;
+      color: #38a3a5;
       text-align: center;
       letter-spacing: 0px;
       font-size: 20px;
       font: Bold 20px/24px Montserrat;
     }
     .nav-circle {
-      color: #517A95;
+      color: #38a3a5;
       border-radius: 50%;
-      border: 4px solid #517A95 !important;
+      border: 4px solid #38a3a5 !important;
       position: absolute;
       right: 20px;
       width: 25px;
@@ -166,10 +166,13 @@ a {
     font: bold 18px/40px Montserrat;
 
     .active {
-      background-color: #517A95;
-      border-radius: 5px;
-      color: #fff;
-      opacity: 1;
+      background-color: #38a3a5;
+    border-radius: 21px;
+    color: #fff;
+    opacity: 1;
+    width: 92%;
+    margin-left: auto;
+    margin-right: auto;
       
     }
     &:hover > p {
@@ -186,13 +189,14 @@ a {
       }
 
       display: inline-block;
-      width: 100%;
-   
-      margin-top: 2px;
-      margin-bottom: 2px;
+      width: 91%;
+      margin-top: 5px;
+      margin-bottom: 5px;
       font-weight: normal;
       padding-top: 6px;
       padding-bottom: 6px;
+      margin-left: auto;
+      margin-right: auto;
 
       &.active > a {
         color: $sidebar-active-color;
@@ -214,7 +218,9 @@ a {
           text-decoration: none;
           color: $sidebar-active-color;
         }
-        background-color: #517A95;
+        background-color: #38a3a5;
+        border-radius: 26px;
+
         
         
       }
@@ -337,6 +343,18 @@ a {
   min-height: 100%;
   overflow: auto;
   background-color: #f7f7f7;
+}
+.bottomLogoutDiv{
+  position: absolute;
+  bottom: 4px;
+  border-top: 2px solid #ebf2f7;
+  width: 91%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-left: 10px;
+  padding-top: 15px;
+  padding-left: 18px;
+
 }
 
 @media (max-width: 992px) {
