@@ -4,6 +4,15 @@ import jwt_decode from 'jwt-decode';
 import {SET_CURRENT_USER ,GET_ERRORS} from '../actions/types'
 
 
+export const LoginUser= UserData => dispatch=>{
+  return axios
+  .post('/api/customer/login', UserData)
+  .then(res =>{
+    console.log(res)
+  })
+}
+
+
 export const validateUser =  UserData  => dispatch => {
   return axios
      .post('/api/sendmail', UserData )

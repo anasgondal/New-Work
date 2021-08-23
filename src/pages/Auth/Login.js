@@ -1,6 +1,7 @@
 
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import {LoginUser} from '../../store/actions/authActions';
 
 
 
@@ -16,6 +17,8 @@ class Login extends Component {
          
             errors: {},
             serverError: {},
+            EmailAddress:'',
+            Password:'',
         };
       
     }
@@ -23,8 +26,17 @@ class Login extends Component {
 
         
         }
+// Making Method/ Function
+      onClickLoginUser =() =>{
+          console.log('anas')
+        const object={
+            email:this.state.EmailAddress,
+            Password:this.state.Password
+        }
+// Calling Method
+        this.props.LoginUser(object) 
 
-      
+      }
     componentWillReceiveProps(nextProps) {
 
     }
@@ -63,7 +75,7 @@ class Login extends Component {
 
                                 <p className="poppins_regular  forget-pass">Forget your password?</p>
 
-                                <button className="poppins_medium log-btn">Login</button>
+                                <button className="poppins_medium log-btn" onClick={()=>this.onClickLoginUser()}>Login</button>
                             
                          </div>
                      </div>
@@ -95,7 +107,7 @@ Login.propTypes = {
 
 const mapStateToProps = state => ({
     auth: state.auth,
-
+    LoginUser
 });
 
 const mapDispatchToProps = ({
