@@ -26,7 +26,7 @@ import Module from '../Categorization/Module';
 import Frcs1Question from '../Questions/Frcs1Question';
 import Frcs2Question from '../Questions/Frcs2Question';
 import Frcs2Clinical from '../Questions/Frcs2Clinical'
-
+import Login from '../Auth/Login';
 
 
 
@@ -77,6 +77,8 @@ const Main = ({
           <PrivateRoute   exact path="/questionmain" component={QuestionMain} /> 
           <PrivateRoute   exact path="/frcs2/oraltype" component={Frcs2Oral} /> 
           <PrivateRoute   exact path="/frcs2/clinicaltype" component={Frcs2Clinical} /> 
+          <PrivateRoute   exact path="/login" component={Login} /> 
+
 
 
         
