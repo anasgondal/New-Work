@@ -34,6 +34,9 @@ body,
   width: 100%;
 }
 
+.sidebarlogo{
+  width: 60%;
+}
 .wrapper {
   height: 100vh;
 }
@@ -63,12 +66,15 @@ a {
   top: 0;
   bottom: 0;
   left: 0;
-  width: $sidebar-width;
+  width: 221px;
   display: block;
   z-index: 1;
-  color: $sidebar-color;
+  color: #2D2926;
   font-weight: 200;
   transition-duration: 0.2s, 0.2s, 0.35s;
+  margin: 15px;
+  border-radius: 22px;
+
   background-color: $sidebar-bg;
    .sidebar-wrapper {
     background-color: $sidebar-bg;
@@ -166,13 +172,14 @@ a {
     font: bold 18px/40px Montserrat;
 
     .active {
-      background-color: #38a3a5;
-    border-radius: 21px;
-    color: #fff;
-    opacity: 1;
-    width: 92%;
-    margin-left: auto;
-    margin-right: auto;
+      background-color: #CDE8E8;
+      border-radius: 21px;
+      color: #37A2A7;
+      opacity: 1;
+      width: 92%;
+      margin-left: auto;
+      margin-right: auto;
+      font-family: 'Poppins'
       
     }
     &:hover > p {
@@ -218,7 +225,7 @@ a {
           text-decoration: none;
           color: $sidebar-active-color;
         }
-        background-color: #38a3a5;
+        background-color: #eef5f5;
         border-radius: 26px;
 
         
@@ -302,7 +309,9 @@ a {
       white-space: nowrap;
       position: relative;
       text-transform: capitalize;
-      margin-left: 45px;
+      margin-left: 48px;
+      font-family: 'Poppins';
+      font-weight: 500;
       // color: #0D1B2A;
       // opacity: 0.6;
 
@@ -338,11 +347,11 @@ a {
 .main-panel {
   position: relative;
   float: right;
-
-  width: calc(100% - 220px);
+  width: calc(100% - 250px);
   min-height: 100%;
   overflow: auto;
   background-color: #f7f7f7;
+  overflow-x: hidden;
 }
 .bottomLogoutDiv{
   position: absolute;

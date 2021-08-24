@@ -8,19 +8,19 @@ import { connect } from 'react-redux';
 
 
 
-import HOME from "../../assets/images/navbar_icons/Nav_Dashboard_Gray.svg";
-import HOME_WHITE from "../../assets/images/navbar_icons/Nav_Dashboard.svg";
+import HOME from "../../assets/images/SidebarIcons/dashboard.png";
+import HOME_WHITE from "../../assets/images/SidebarIcons/Color/dashboard.png";
 
 
-import ManageBook from "../../assets/images/navbar_icons/managebook.svg";
-import ManageBookActive from "../../assets/images/navbar_icons/managebookActive.svg";
+import ManageBook from "../../assets/images/SidebarIcons/profile.png";
+import ManageBookActive from "../../assets/images/SidebarIcons/Color/profile.png";
 
 
 import AddNewBook from "../../assets/images/navbar_icons/addnewbook.svg";
 import AddNewBookActive from "../../assets/images/navbar_icons/addnewbookActive.svg";
 
-import EbookConversion from "../../assets/images/navbar_icons/ebookconversion.svg";
-import EbookConversionActive from "../../assets/images/navbar_icons/ebookconversionActive.svg";
+import EbookConversion from "../../assets/images/SidebarIcons/analytics.png";
+import EbookConversionActive from "../../assets/images/SidebarIcons/Color/analytics.png";
 
 
 import Tracking from "../../assets/images/navbar_icons/tracking.svg";
@@ -70,7 +70,7 @@ class Nav extends Component {
          </li>
          <li className={location.pathname === '/categorization' ? 'active' : null}>
           <Link to="/categorization" >
-            <i ><img src={location.pathname === '/categorization' ? ManageBookActive : ManageBook}></img> </i>
+            <i ><img src={location.pathname === '/categorization' ? EbookConversionActive : EbookConversion}></img> </i>
              <p className="poppins_regular">Categorization</p>
            </Link>
          </li>

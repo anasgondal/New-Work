@@ -165,7 +165,7 @@ class Dashboard extends Component {
                                 <Chart
                                     chartType="ColumnChart"
                                     width="100%"
-                                    height="300px"
+                                    height="260px"
                                     data={data}
                                 />
                             </div>

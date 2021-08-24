@@ -22,19 +22,20 @@
     
 }
 .vl {
-    border-left: 1px solid gray;
+    border-left: 1px solid #d8d6d6;
     height: 35px;
     position: absolute;
-    left: 12%;
-    margin-left:80px;
+    left: 15%;
+    margin-left: 80px;
     top: 8px;
   }
-  .icons{
-     
-      padding-top: 15px;
-    padding-left: 50%;
-    margin-left: 30px;
-
+ 
+  .headerIcon{
+      margin: 15px;
+  }
+  .headerIcon:hover{
+      cursor: pointer;
+      opacity: 0.8;
   }
   .input-sec{
       width: 100%;

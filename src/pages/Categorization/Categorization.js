@@ -67,10 +67,10 @@ class Categorization extends Component {
 
             <div className="categorization mt-4">
                 <div className="container  p-0">
-                    <div className="row btn-row ">
+                    <div className="row btn-row m-0">
 
                         <div className="col-md-2 p-0">
-                                <button className={cx({ "poppins_medium up-btn": true, "poppins_medium up-btn-Active": this.state.activeTab === 1 })} onClick={() => this.onClickBottomBar(1)} >Test Type</button>
+                                <button className={cx({ "poppins_medium up-btn-left": true, "poppins_medium up-btn-Active-left": this.state.activeTab === 1 })} onClick={() => this.onClickBottomBar(1)} >Test Type</button>
                         </div>
                         <div className="col-md-2 p-0">
                             

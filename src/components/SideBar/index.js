@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
-import Logo from '../../assets/images/Logo.svg'
+import Logo from '../../assets/images/Logo.png'
  
  
 import Nav from './Nav';
@@ -30,8 +30,8 @@ render() {
           <a className="brand-name-bold">GROCERYS</a>
           <div className="nav-circle" ></div>
         </div> */}
-        <div className="sidebar-logo-container">
-        <img className="imgw100" src ={Logo}></img>
+        <div className="sidebar-logo-container text-center">
+        <img className="sidebarlogo" src ={Logo}></img>
         </div>
 
         <div className="sidebar-wrapper ">

@@ -38,10 +38,10 @@ class Header extends Component {
       <div className="header-section mt-3">
         <div className="container p-0">
           <div className="row ">
-            <div className="col-md-1">
+            {/* <div className="col-md-1">
               <div className="list"></div>
-            </div>
-            <div className="col-md-11">
+            </div> */}
+            <div className="col-md-12">
               <div className="header" >
 
                <div className="row">
@@ -50,11 +50,11 @@ class Header extends Component {
                  <div className="col-md-4">
                    <input className="input-sec" type="search" placeholder="Enter Your Text"></input>
                  </div>
-                 <div className="col-md-4">
+                 <div className="col-md-4 text-right">
                  <div className="icons">
-               <img   src={search}/>&nbsp;&nbsp;&nbsp;
-               <img  src={bell}/>&nbsp;&nbsp;&nbsp;
-                  <img  src={user2}/>
+               <img  className="headerIcon"  src={search}/>
+               <img  className="headerIcon"   src={bell}/>
+                  <img  className="headerIcon"  src={user2}/>
                   </div>
                  </div>
                </div>
