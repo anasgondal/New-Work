@@ -9,6 +9,7 @@ export const LoginUser= UserData => dispatch=>{
   .post('/api/customer/login', UserData)
   .then(res =>{
     console.log(res)
+    return Promise.resolve(res.data)
   })
 }
 

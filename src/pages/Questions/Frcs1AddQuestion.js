@@ -293,8 +293,10 @@ class Frcs1AddQuestion extends Component {
                     <div className="row m-0">
                         <div className="col-md-3">
                             <div className="vital-sign">
-                                <img src={checkbox2} />&nbsp;&nbsp;&nbsp;<label className="poppins_light">Vital Signs</label><br />
-                                <img src={checkbox2} />&nbsp;&nbsp;&nbsp;<label className="poppins_light">Laboratory Reports</label>
+                                {/* <img src={checkbox2} /> */}
+                                <input type="checkbox" ></input> &nbsp;&nbsp;&nbsp;<label className="poppins_light">Vital Signs</label><br />
+                                {/* <img src={checkbox2} />  */}
+                                <input type="checkbox" ></input>&nbsp;&nbsp;&nbsp;<label className="poppins_light">Laboratory Reports</label>
                             </div>
                         </div>
 

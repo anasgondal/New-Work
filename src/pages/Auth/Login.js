@@ -34,7 +34,13 @@ class Login extends Component {
             Password:this.state.Password
         }
 // Calling Method
-        this.props.LoginUser(object) 
+        this.props.LoginUser(object)
+        .then( (r) =>
+        {
+            console.log(r)
+        }
+        )
+        console.log('anas') 
 
       }
     componentWillReceiveProps(nextProps) {
@@ -107,9 +113,10 @@ Login.propTypes = {
 
 const mapStateToProps = state => ({
     auth: state.auth,
-    LoginUser
+    
 });
 
 const mapDispatchToProps = ({
+    LoginUser
 })
 export default connect(mapStateToProps, mapDispatchToProps)(Login);
