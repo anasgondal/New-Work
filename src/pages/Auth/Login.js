@@ -120,3 +120,25 @@ const mapDispatchToProps = ({
     LoginUser
 })
 export default connect(mapStateToProps, mapDispatchToProps)(Login);
+
+
+
+
+
+{/* <div className="row">
+    <div className="col-md-12">
+        <h1> Inner Section </h1>
+        <div className="col-md-4">
+            <h2>
+                <span>
+                    <ul>
+                        <li>First Name</li>
+                        <li>Last Name</li>
+                        <li>CNIC Number Name</li>
+                        <li>Address</li>
+                    </ul>
+                </span>
+            </h2>
+        </div>
+    </div>
+</div> */}

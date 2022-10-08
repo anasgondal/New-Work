@@ -427,9 +427,9 @@ class Frcs1AddQuestion extends Component {
                     <div className="row mt-4 p-0">
                         <div className="col-md-6 anas ">
                             <div className="row gapping">
-                                <div className="col-md-6"><button className="uparrow-btn">
-                                    <img src={uparrow} /> &nbsp;&nbsp;&nbsp;
-                                    <label className="poppins_extralight upload">Upload Image</label>
+                                <div className="col-md-6"><button className="uparrow-btn poppins_extralight upload">
+                                    <img src={uparrow} /> &nbsp;&nbsp;&nbsp; Upload Image
+                                    {/* <label className="poppins_extralight upload">Upload Image</label> */}
                                 </button></div>
                                 <div className="col-md-6 "><img src={tick} /> &nbsp;&nbsp;&nbsp;
                                     <label className="poppins_extralight demo">demo_image.jpg</label> </div>
